@@ -114,5 +114,5 @@ t.gen_text(text="\x1b[36mTailwindCSS", row_num=15)
 
 t.gen_prompt(16)
 t.gen_typing_text(
-    text='echo "thanks for stopping by!', row_num=16, contin=True, speed=0.3
+    text='echo "thanks for stopping by!"', row_num=16, contin=True, speed=0.3
 )
