@@ -7,7 +7,7 @@ github_stats = gifos.utils.fetch_github_stats(
     user_name="rickastleey"
 )  # needs GITHUB_TOKEN in .env or as environment variable
 t.delete_row(row_num=1)
-t.gen_text(text=f"GitHub Name: {github_stats.account_name}", row_num=1, contin=True)
+t.gen_text(text=f"GitHub Name: {github_stats.user_name}", row_num=1, contin=True)
 t.gen_gif()
 image = gifos.utils.upload_imgbb(
     file_name="output.gif", expiration=60
