@@ -98,24 +98,18 @@ details_lines = f"""\x1b[96mUser Rating: \x1b[93m{gh_stats.user_rank.level}\x1b[
 t.gen_text(text=details_lines, row_num=3)
 
 t.gen_prompt(9)
-t.gen_typing_text(
-    text="cat /proc/languages | head -n 4", row_num=9, contin=True, speed=0.1
-)
+t.gen_typing_text(text="cat /proc/languages | head -n 4", row_num=9, contin=True, speed=0.1)
 t.gen_text(text="\x1b[33mJavaScript", row_num=10)
 t.gen_text(text="\x1b[34mPython", row_num=11)
 t.gen_text(text="\x1b[32mC#", row_num=12)
 
 t.gen_prompt(13)
-t.gen_typing_text(
-    text="cat /proc/frameworks | head -n 2", row_num=13, contin=True, speed=0.1
-)
+t.gen_typing_text(text="cat /proc/frameworks | head -n 2", row_num=13, contin=True, speed=0.1)
 t.gen_text(text="\x1b[32mVue", row_num=14)
 t.gen_text(text="\x1b[36mTailwindCSS", row_num=15)
 
 t.gen_prompt(17)
-t.gen_typing_text(
-    text='echo "thanks for stopping by!"', row_num=17, contin=True, speed=0.3
-)
+t.gen_typing_text(text='echo "thanks for stopping by!"', row_num=17, contin=True, speed=0.3)
 
 t.gen_prompt(26)
 t.clone_frame(60)
