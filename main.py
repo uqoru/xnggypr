@@ -1,6 +1,6 @@
 import gifos
 
-t = gifos.Terminal(width=320, height=240, xpad=5, ypad=5)
+t = gifos.Terminal(width=800, height=600, xpad=5, ypad=5, font_size=15)
 t.gen_text(text="Hello World!", row_num=1)
 t.gen_text(text="Hello, VizXtreme and ukriu!", row_num=2)
 github_stats = gifos.utils.fetch_github_stats(
