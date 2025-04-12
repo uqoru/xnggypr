@@ -117,5 +117,16 @@ t.gen_typing_text(
     text="echo 'thanks for stopping by!'", row_num=16, contin=True, speed=0.3
 )
 
+t.gen_prompt(26)
+t.clone_frame(60)
+t.gen_typing_text("reboot", 26, contin=True, speed=0.1)
+t.clone_frame(5)
+t.clear_frame()
+init_line("Stopping system...", 1)
+t.clone_frame(10)
+t.clear_frame()
+boot_line("System halted.", 1)
+t.clone_frame(10)
+
 # Generate the GIF
 t.gen_gif()
