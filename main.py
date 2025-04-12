@@ -116,3 +116,6 @@ t.gen_prompt(16)
 t.gen_typing_text(
     text='echo "thanks for stopping by!"', row_num=16, contin=True, speed=0.3
 )
+
+# Generate the GIF
+t.gen_gif()
