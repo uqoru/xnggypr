@@ -94,9 +94,9 @@ t.clone_frame(15)
 
 t.clear_frame()
 t.gen_text(text="Welcome, rickastleey! Last Login: 01-01-1999T00:00:19", row_num=1)
-t.set_prompt("\x1b[35xnggypr\x1b[39m@\x1b[32mgithub\x1b[39m:~$ ")
+t.set_prompt("\x1b[35mxnggypr\x1b[39m@\x1b[32mgithub\x1b[39m:~$ ")
 t.gen_prompt(2)
-t.gen_typing_text(text="ghfetch -u xnggypr", row_num=2, contin=True, speed=0.1)
+t.gen_typing_text(text="ghfetch -u rickastleey", row_num=2, contin=True, speed=0.1)
 
 gh_stats = gifos.utils.fetch_github_stats("xnggypr")
 details_lines = f"""\x1b[96mUser Rating: \x1b[93m{gh_stats.user_rank.level}\x1b[0m
